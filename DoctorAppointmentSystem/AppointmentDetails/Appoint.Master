@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Appoint.master.cs" Inherits="DoctorAppointmentSystem.AppointmentDetails.Appoint" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 924px">
+    <form id="form1" runat="server">
+         <div>
+            <div style="padding:10px; color: #FF0000; font-size: 40px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/AppointmentDetails/Home.aspx">HOME</a>
+                |<a href="/AppointmentDetails/SpecialistList.aspx" id="st" runat="server">Specialist</a>
+                |<a href="/AppointmentDetails/DoctorList.aspx" id="sf" runat="server">Doctor</a>
+            </div>
+            <div style="float:right">
+                Welcome, <asp:Label ID="loggedUser" runat="server" Text="Label"></asp:Label>
+                <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+            </div>
+        </div>
+        <div style="padding:10px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
